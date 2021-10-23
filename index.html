@@ -18,15 +18,15 @@
   </head>
   <body>
     <header>
-     <!-- Barra superior -->
-     <nav id="navbar">
-      <ul>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#knowledge">Conhecimento</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-      </ul>
-    </nav>
+      <!-- Barra superior -->
+      <nav id="navbar">
+        <ul>
+          <li tabindex="1"><a href="#about">Sobre</a></li>
+          <li tabindex="2"><a href="#knowledge">Conhecimento</a></li>
+          <li tabindex="3"><a href="#skills">Habilidades</a></li>
+          <li tabindex="4"><a href="#portfolio">Portfólio</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Barra Lateral -->
@@ -77,9 +77,8 @@
       </aside>
 
       <section>
-
-      <!-- About -->
-        <article id="about" class="container">
+        <!-- About -->
+        <article id="about" class="container" tabindex="5">
           <h2>Quem Sou Eu</h2>
           <div>
             <p>
@@ -106,8 +105,8 @@
             ></lottie-player>
           </div>
         </article>
-      <!-- Knowledge -->
-        <article id="knowledge" class="container">
+        <!-- Knowledge -->
+        <article id="knowledge" class="container" tabindex="6">
           <h2>Conhecimento</h2>
           <div class="timeline">
             <ul>
@@ -247,92 +246,122 @@
             </ul>
           </div>
         </article>
-      <!-- Skill -->
-      <article id="skills" class="container">
-        <h2>Habilidades</h2>
-        <div class="skills">
+        <!-- Skill -->
+        <article id="skills" class="container" tabindex="7">
+          <h2>Habilidades</h2>
+          <div class="skills">
+            <div class="tecnology">
+              <img src="./assets/html-icon.svg" alt="icon-html" />
+              <div class="progress">
+                <div class="progress-bar">
+                  <div class="progress-text" style="width: 91%">
+                    <p>HTML</p>
+                    <span>91%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div class="tecnology">
-            <img src="./assets/html-icon.svg" alt="icon-html">
-            <div class="progress">
-              <div class="progress-bar">
-                <div class="progress-text" style="width: 91%;">
-                  <p>HTML</p>
-                  <span>91%</span>
+            <div class="tecnology">
+              <img src="./assets/css-icon.svg" alt="icon-css" />
+              <div class="progress">
+                <div class="progress-bar">
+                  <div class="progress-text" style="width: 82%">
+                    <p>CSS</p>
+                    <span>82%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tecnology">
+              <img src="./assets/javascript-icon.svg" alt="icon-javascript" />
+              <div class="progress">
+                <div class="progress-bar">
+                  <div class="progress-text" style="width: 71%">
+                    <p>JavaScript</p>
+                    <span>71%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tecnology">
+              <img src="./assets/react-icon.svg" alt="icon-react" />
+              <div class="progress">
+                <div class="progress-bar">
+                  <div class="progress-text" style="width: 61%">
+                    <p>ReactJS</p>
+                    <span>61%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tecnology">
+              <img src="./assets/kotlin-icon.svg" alt="icon-Kotlin" />
+              <div class="progress">
+                <div class="progress-bar">
+                  <div class="progress-text" style="width: 61%">
+                    <p>Kotlin</p>
+                    <span>61%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tecnology">
+              <img src="./assets/icon-git.svg" alt="icon-git" />
+              <div class="progress">
+                <div class="progress-bar">
+                  <div class="progress-text" style="width: 78%">
+                    <p>GitHub/Git</p>
+                    <span>78%</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </article>
+        <!-- Portfólio -->
+        <article id="portfolio" class="container" tabindex="8">
+          <h2>Portfólio</h2>
+          <div class="grade">
+            <div class="project">
+              <a href="https://drlazinho-beatysalon.netlify.app/" target="_blank">
+                <img src="./assets/img-site-beleza.png" alt="Imagem do Site de Serviços de Beleza" />
+                <p>Site Serviços de Beleza</p>
+              </a>
+            </div>
 
-          <div class="tecnology">
-            <img src="./assets/css-icon.svg" alt="icon-css">
-            <div class="progress">
-              <div class="progress-bar">
-                <div class="progress-text" style="width: 82%;">
-                  <p>CSS</p>
-                  <span>82%</span>
-                </div>
-              </div>
+            <div class="project">
+              <a href="https://leagueflix.netlify.app/" target="_blank">
+                <img src="https://i.pinimg.com/originals/c3/b4/29/c3b4297bf507de9b47a6f7a1fdfc2890.jpg" alt="Imagem Netflix Alternativa de League of Legends" />
+                <p>Netflix Alternativa <br>League of Legends</p>
+              </a>
+            </div>
+
+            <div class="project">
+              <a href="https://instaleague.netlify.app/" target="_blank">
+                <img src="https://i.pinimg.com/originals/be/a4/ac/bea4acfc772b3d1cbf77cf65be8232c9.jpg" alt="Imagem Instagram Alternativa de League of Legends" />
+                <p>Instagram Alternativo <br>League of Legends</p>
+              </a>
+            </div>
+            
+            <div class="project">
+              <a href="https://github.com/Drlazinho/TipTime" target="_blank">
+                <img src="./assets/img-app-tiptime.png" alt="Banner do Aplicativo TipTime" />
+                <p>Aplicativo TipTime</p>
+              </a>
             </div>
           </div>
-
-          <div class="tecnology">
-            <img src="./assets/javascript-icon.svg" alt="icon-javascript">
-            <div class="progress">
-              <div class="progress-bar">
-                <div class="progress-text" style="width: 71%;">
-                  <p>JavaScript</p>
-                  <span>71%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tecnology">
-            <img src="./assets/react-icon.svg" alt="icon-react">
-            <div class="progress">
-              <div class="progress-bar">
-                <div class="progress-text" style="width: 61%;">
-                  <p>ReactJS</p>
-                  <span>61%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tecnology">
-            <img src="./assets/kotlin-icon.svg" alt="icon-Kotlin">
-            <div class="progress">
-              <div class="progress-bar">
-                <div class="progress-text" style="width: 61%;">
-                  <p>Kotlin</p>
-                  <span>61%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tecnology">
-            <img src="./assets/icon-git.svg" alt="icon-git">
-            <div class="progress">
-              <div class="progress-bar">
-                <div class="progress-text" style="width: 78%;">
-                  <p>GitHub/Git</p>
-                  <span>78%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-      <!-- Portfólio -->
-      <article id="portfolio" class="container">
-        <h2>Portfólio</h2>
-      </article>
-      
-
+        </article>
       </section>
     </main>
+    
+    <footer class="container section">
+      Desenvolvido por Lázaro Pimentel <span>Atualizado às 18:20 de 23/10/2021 Sábado<span>
+    </footer>
 
     <!-- animation lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
