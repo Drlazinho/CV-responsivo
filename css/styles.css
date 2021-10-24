@@ -43,6 +43,7 @@ section {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
 .container:not(#portfolio){
   border-bottom: 1.5px solid rgb(150, 150, 150);
 }
@@ -121,11 +122,13 @@ aside {
 #sidebar .title-name {
   margin-bottom: 15px;
 }
+
 #sidebar .subtitle-role {
   border-top: 1px solid white;
   padding: 15px;
   border-radius: 25px;
 }
+
 #sidebar .social-links {
   display: flex;
   font-size: 20px;
@@ -138,20 +141,25 @@ aside {
 #sidebar .social-links i {
   transition: color 0.7s;
 }
+
 #sidebar .social-links i:hover {
   color: orange;
 }
+
 #sidebar .personal-data {
   text-align: start;
 }
+
 #sidebar .personal-data a,
 .personal-data span {
   margin-left: 8px;
   color: white;
 }
+
 #sidebar .personal-data li {
   margin-bottom: 8px;
 }
+
 #sidebar .download-button {
   margin-top: 20px;
   color: black;
@@ -174,6 +182,7 @@ aside {
   align-items: flex-start;
   text-align: justify;
 }
+
 #about div lottie-player {
   position: relative;
   width: 300px;
@@ -190,6 +199,7 @@ aside {
   height: auto;
   max-width: 600px;
   margin: 0 auto;
+  text-align: justify;
   position: relative;
 }
 
@@ -201,11 +211,13 @@ aside {
   background-color: black;
   left: -40px;
 }
+
 #knowledge .timeline-content div{
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
+
 #knowledge .timeline ul li {
   padding: 20px;
   background-color: rgb(86, 85, 85);
@@ -221,11 +233,13 @@ aside {
   width: 100px;
   height: 100px;
 }
+
 #knowledge .timeline ul li a {
   color: white;
   transition: color 0.3s;
 }
-#knowledge .timeline ul li a:hover {
+
+#knowledge .timeline ul li a:hover, #knowledge .date-timeline:hover {
   color: rgb(255, 98, 40);
 }
 
@@ -244,9 +258,6 @@ aside {
   transition: 0.3s;
   padding: 10px;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.353);
-}
-#knowledge .date-timeline:hover {
-   color: orangered;
 }
 
 #knowledge .date-timeline::after {
@@ -268,6 +279,7 @@ aside {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 #skills .skills .tecnology {
   display: flex;
   width: 400px;
@@ -280,6 +292,7 @@ aside {
   width: 50px;
   height: 50px;
 }
+
 #skills .progress {
   width: 80%;
   background-color: grey;
@@ -299,41 +312,37 @@ aside {
 /******************/
 /*   Portfolio    */
 /******************/
-#portfolio .grade {
+#portfolio .projects {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: auto;
-  padding-top: 20px;
-}
-#portfolio p{
-  text-align: center;
+  padding-top: 2rem;
 }
 
-#portfolio .project {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  justify-content: space-around;
-  align-items: center;
+#portfolio .project-item {
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+  text-align: center;
+  padding-bottom: 2rem;
+  width: 40%;
   transition: background-color .3s;
 }
-#portfolio .project:hover {
-  background-color: rgb(255, 98, 40);
+
+#portfolio .project-item:hover {
+  color: rgb(255, 98, 40);
   filter: opacity(70%);
 }
 
-#portfolio .project a {
+#portfolio .project-item a {
   color: #131313;
 }
-#portfolio .project img {
+
+#portfolio .project-item img {
   object-fit: fill;
-  width: 38rem;
-  height: 19rem;
-}
-#portfolio .project p{
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: 500;
+  width: 100%;
 }
 
 /***************/
@@ -351,7 +360,6 @@ footer {
 /***********************/
 
 @media (max-width: 1150px) {
-
   #about div lottie-player {
     position: absolute;
     top: 70px;
@@ -363,23 +371,24 @@ footer {
   #knowledge .timeline{
     margin-left: 150px;
     width: 50%;
-    text-align: justify;
   }
+
   #knowledge .timeline h3{
     text-align: center;
   }
+
   #knowledge .timeline ul li{
     width: 120%;
   }
-
+  
   #knowledge .timeline ul li .certificate{
     display: none;
   }
-
 }
 
 /* MOBILE */
 @media (max-width: 784px){
+  
   section {
     margin: 20px;
     padding-top: 0;
@@ -426,17 +435,18 @@ footer {
     display: flex;
   }
 
-  
   #knowledge .timeline ul li {
     position: relative;
     right: 15rem;
     width: 200%;
   }
+
   #knowledge .timeline-content div{
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
+
   #knowledge .timeline ul li {
     padding: 20px;
     background-color: rgb(86, 85, 85);
@@ -453,22 +463,21 @@ footer {
     position: static;
     box-shadow: none;
   }
+
   #knowledge .timeline ul li .symbol {
     margin: 1rem auto;
     width: 100px;
     height: 100px;
   }
+
   #knowledge .date-timeline::after {
     display: none;
   }
+
   #knowledge .timeline::before {
     display: none;
   }
 
-  #portfolio img{
-    width: 100%;
-  }
- 
   footer {
     padding: 16px;
     justify-content: center;
