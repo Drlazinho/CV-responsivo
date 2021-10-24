@@ -27,6 +27,7 @@ html {
   background-color: rgb(228, 228, 228);
   font-family: Poppins, 'sans-seriff';
   scroll-behavior: smooth;
+  /* font-size: 62.5%; */
 }
 
 section {
@@ -171,6 +172,8 @@ aside {
 }
 #about div lottie-player {
   position: relative;
+  width: 300px;
+  height: 300px;
   bottom: 80px;
 }
 
@@ -179,7 +182,7 @@ aside {
 /******************/
 
 #knowledge .timeline {
-  width: 50%;
+  width: 60%;
   height: auto;
   max-width: 600px;
   margin: 0 auto;
@@ -194,6 +197,11 @@ aside {
   background-color: black;
   left: -40px;
 }
+#knowledge .timeline-content div{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 #knowledge .timeline ul li {
   padding: 20px;
   background-color: rgb(86, 85, 85);
@@ -202,9 +210,9 @@ aside {
   margin-bottom: 20px;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.353);
 }
-#knowledge .timeline ul li img {
+
+#knowledge .timeline ul li .symbol {
   margin-top: 10px;
-  margin-right: 35px;
   margin-bottom: -30px;
   width: 100px;
   height: 100px;
@@ -329,7 +337,7 @@ aside {
 footer {
   display: flex;
   font-size: 12px;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 330px;
   padding-bottom: 5px;
 }
@@ -337,3 +345,81 @@ footer {
 /*   Responsividade    */
 /***********************/
 
+@media (max-width: 1150px) {
+
+  #about div lottie-player {
+    position: absolute;
+    top: 70px;
+    left: 480px;
+    width: 100px;
+    height: 100px;
+  }
+
+  #knowledge .timeline{
+    margin-left: 150px;
+    width: 50%;
+    text-align: justify;
+  }
+  #knowledge .timeline h3{
+    text-align: center;
+  }
+  #knowledge .timeline ul li{
+    width: 120%;
+  }
+
+  #knowledge .timeline ul li .certificate{
+    display: none;
+  }
+
+}
+
+@media (max-width: 784px){
+  section {
+    margin: 20px;
+    padding-top: 0;
+  }
+
+  aside{
+    position: static;
+    width: 100%;
+  }
+
+  .container{
+    margin: 16px;
+  }
+  .container:not(#portfolio){
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+  }
+
+  h2 {
+    margin: 20px auto;
+  }
+
+  #about div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #about div lottie-player {
+    position: static;
+    width: 150px;
+    height: 150px;
+  }
+
+  #about div {
+    display: flex;
+  }
+  
+
+  #navbar {
+    display: none;
+  }
+
+  footer {
+    padding: 16px;
+    justify-content: center;
+  }
+
+}
