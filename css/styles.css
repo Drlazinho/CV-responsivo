@@ -112,8 +112,8 @@ aside {
 }
 
 #sidebar .photo {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   margin-top: 100px;
   margin-bottom: 30px;
   clip-path: circle();
