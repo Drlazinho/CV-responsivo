@@ -303,13 +303,15 @@ aside {
   margin: auto;
   padding-top: 20px;
 }
+#portfolio p{
+  text-align: center;
+}
 
 #portfolio .project {
   margin-right: 20px;
   margin-bottom: 20px;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
   transition: background-color .3s;
 }
 #portfolio .project:hover {
@@ -326,6 +328,7 @@ aside {
   height: 192px;
 }
 #portfolio .project p{
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
 }
@@ -335,9 +338,8 @@ aside {
 /***************/
 
 footer {
-  display: flex;
+  text-align: center;
   font-size: 12px;
-  justify-content: center;
   padding-left: 330px;
   padding-bottom: 5px;
 }
@@ -382,6 +384,10 @@ footer {
   aside{
     position: static;
     width: 100%;
+  }
+
+  #sidebar .photo{
+    margin-top: 16px;
   }
 
   .container{
