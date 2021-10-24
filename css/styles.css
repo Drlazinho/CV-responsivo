@@ -12,7 +12,7 @@ ul {
 }
 
 a {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -38,10 +38,9 @@ section {
   margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
-  border-bottom: 1.5px solid rgb(150, 150, 150);
 }
-.container:nth-last-child(){
-  border-bottom: none;
+.container:not(#portfolio){
+  border-bottom: 1.5px solid rgb(150, 150, 150);
 }
 
 h2 {
@@ -278,7 +277,7 @@ aside {
 
 #skills .progress .progress-text {
   display: flex;
-  background-color: orange;
+  background-color: rgb(255, 98, 40);
   justify-content: space-between;
   color: #131313;
   font-weight: bold;
@@ -303,7 +302,13 @@ aside {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  transition: background-color .3s;
 }
+#portfolio .project:hover {
+  background-color: rgb(255, 98, 40);
+  filter: opacity(70%);
+}
+
 #portfolio .project a {
   color: #131313;
 }
@@ -312,6 +317,10 @@ aside {
   width: 380px;
   height: 192px;
 }
+#portfolio .project p{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 
 /***************/
 /*   footer    */
@@ -319,9 +328,12 @@ aside {
 
 footer {
   display: flex;
+  font-size: 12px;
   justify-content: space-between;
   padding-left: 330px;
+  padding-bottom: 5px;
 }
 /************************/
 /*   Responsividade    */
 /***********************/
+
