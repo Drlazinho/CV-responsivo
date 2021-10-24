@@ -108,12 +108,12 @@ aside {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: whitesmoke;
+  font-size: 1.6rem;
 }
 
 #sidebar .photo {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
   margin-top: 100px;
   margin-bottom: 30px;
   clip-path: circle();
@@ -355,6 +355,7 @@ footer {
   padding-left: 330px;
   padding-bottom: 5px;
 }
+
 /************************/
 /*   Responsividade    */
 /***********************/
@@ -380,7 +381,7 @@ footer {
   #knowledge .timeline ul li{
     width: 120%;
   }
-  
+
   #knowledge .timeline ul li .certificate{
     display: none;
   }
@@ -482,5 +483,4 @@ footer {
     padding: 16px;
     justify-content: center;
   }
-
 }
