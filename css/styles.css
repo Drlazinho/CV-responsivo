@@ -44,6 +44,7 @@ section {
   margin-right: 3rem;
 }
 
+
 .container:not(#portfolio){
   border-bottom: 1.5px solid rgb(150, 150, 150);
 }
