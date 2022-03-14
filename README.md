@@ -2,5 +2,7 @@
  CV-Portfolio
 Criando um currículo/portfólio.
 
-[ ] Responsividade 
-[ ] Resolver bugs
+Link do CV:
+https://cvlazaropimentel-drlazinho.netlify.app/
+
+REMAKE PLANEJADO PARA 2022 -- (VUE OU REACTJS)
